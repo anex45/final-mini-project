@@ -1,0 +1,145 @@
+/**
+ * Python Interview System - Main Stylesheet
+ * This file contains all the custom styles for the interview interface
+ */
+
+body {
+    padding-top: 2rem;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Screen Styles */
+.screen {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+#start-screen {
+    display: block;
+}
+
+/* Category Selection */
+.category-item {
+    margin-bottom: 0.5rem;
+    transition: all 0.2s;
+    border-left: 4px solid #0d6efd;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Question & Answer */
+#question-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#answer-input {
+    min-height: 150px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#answer-input:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Feedback */
+#score-value {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+#feedback-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+/* Results */
+.result-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #0d6efd;
+}
+
+.result-question {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #212529;
+}
+
+.result-answer {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.result-score {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.result-feedback {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #6c757d;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+    border-color: #565e64;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .screen {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

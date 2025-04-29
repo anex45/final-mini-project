@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+egss/
+.eggs/
+lib/
+lib64
+
+# Exclude large model binaries but keep configs
+*.pt
+*.bin
+
+# Environment files
+.env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Local development
+.DS_Store
+
+# Sessions
+sessions/

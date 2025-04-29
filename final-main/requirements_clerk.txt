@@ -1,0 +1,27 @@
+# Core dependencies from original project
+transformers==4.37.2
+torch==2.0.1
+numpy==1.26.0
+pandas==2.0.3
+scikit-learn==1.3.0
+tqdm==4.65.0
+colorama==0.4.6
+prettytable==3.8.0
+jax==0.4.19
+jaxlib==0.4.19
+typing-extensions==4.7.1
+
+# Web application dependencies
+flask==2.3.3
+werkzeug==2.3.7
+click==8.1.7
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+gunicorn==21.2.0
+
+# Authentication dependencies
+clerk-sdk-python==0.1.1
+python-dotenv==1.0.0
+flask-cors==4.0.0
+requests==2.31.0

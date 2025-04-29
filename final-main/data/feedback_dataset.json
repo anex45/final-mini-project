@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the difference between a list and a tuple in Python?",
+    "correct_answer": "Lists are mutable, meaning they can be modified after creation, while tuples are immutable. Lists use square brackets [] and tuples use parentheses (). Lists generally consume more memory than tuples and are slower for iteration.",
+    "detailed_feedback": "Your answer correctly identifies the key difference between lists and tuples - mutability. Lists can be modified after creation while tuples cannot. You've also mentioned the syntax differences (square brackets vs parentheses) and performance characteristics. To enhance your answer, you could also mention that tuples can be used as dictionary keys due to their immutability, while lists cannot. Additionally, you might explain that tuples are often used for heterogeneous data while lists are typically used for homogeneous data collections."
+  },
+  {
+    "question": "Explain how Python handles memory management.",
+    "correct_answer": "Python uses automatic memory management with a private heap to store objects and data structures. It has a built-in garbage collector that reclaims memory from objects that are no longer referenced. Python uses reference counting as its primary memory management technique, along with cycle-detecting garbage collection to handle circular references.",
+    "detailed_feedback": "Your response demonstrates a strong understanding of Python's memory management. You've correctly explained that Python uses automatic memory management with reference counting and garbage collection. Your mention of the private heap and handling of circular references shows depth of knowledge. To make your answer even more comprehensive, you could discuss how the memory manager allocates/deallocates memory blocks and how Python's memory pooling works for small objects to improve efficiency."
+  },
+  {
+    "question": "What are Python decorators and how do they work?",
+    "correct_answer": "Python decorators are functions that modify the functionality of other functions. They use the @decorator syntax and allow for metaprogramming. Decorators wrap a function, modifying its behavior without permanently modifying the function itself. They are called before the function they decorate is called.",
+    "detailed_feedback": "Your explanation of decorators covers the essential concept that they modify the functionality of other functions. You've correctly mentioned the @decorator syntax and that they wrap functions. To improve your answer, you could provide a simple example showing a decorator definition and application. Also, explaining that decorators are higher-order functions that take a function as an argument and return a function would demonstrate deeper understanding of the concept."
+  },
+  {
+    "question": "What is the difference between multiprocessing and multithreading in Python?",
+    "correct_answer": "Multiprocessing uses separate processes with their own memory space, allowing true parallel execution and bypassing the GIL, but with higher overhead for inter-process communication. Multithreading uses threads within a single process sharing memory space, which is more efficient for I/O-bound tasks but limited by the GIL for CPU-bound tasks.",
+    "detailed_feedback": "Your answer effectively distinguishes between multiprocessing and multithreading in Python. You've correctly identified that multiprocessing uses separate processes with their own memory space while multithreading uses threads within a single process. Your mention of the Global Interpreter Lock (GIL) and its impact on both approaches shows good understanding. To enhance your answer, you could discuss specific use cases where each approach is preferable and mention the multiprocessing and threading modules in Python's standard library."
+  },
+  {
+    "question": "Explain the asyncio module in Python and how it works.",
+    "correct_answer": "The asyncio module provides infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O access over sockets and other resources. It's a form of cooperative multitasking where tasks voluntarily yield control when they are waiting for I/O, allowing other tasks to run. It uses an event loop to manage and distribute the execution of different tasks.",
+    "detailed_feedback": "Your explanation of asyncio covers the key concepts of single-threaded concurrency and coroutines. You've correctly described the event loop model and how tasks yield control during I/O operations. To make your answer more comprehensive, you could explain the difference between asyncio and traditional threading/multiprocessing, discuss async/await syntax introduced in Python 3.5+, and provide a simple example showing how to define and run coroutines with asyncio."
+  }
+]
